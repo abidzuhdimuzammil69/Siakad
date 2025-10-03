@@ -1,52 +1,72 @@
 public class Mahasiswa {
-<<<<<<< HEAD
+    // Property (atribut)
+    private String nama;
+    private String nim;
+    private String jurusan;
+    private int angkatan;
 
-    
-     // Atribut
-    public String nama;
-    public int nim;
-    public String jurusan;
-
-    // Method untuk menampilkan data
-    public void tampilkanData() {
-        System.out.println("Nama    : " + nama);
-        System.out.println("NIM     : " + nim);
-        System.out.println("Jurusan : " + jurusan);
+    // Constructor
+    public Mahasiswa(String nama, String nim, String jurusan, int angkatan) {
+        this.nama = nama;
+        this.nim = nim;
+        this.jurusan = jurusan;
+        this.angkatan = angkatan;
     }
 
-    // Method untuk mengubah jurusan
-    public void ubahJurusan(String jurusanBaru) {
-        jurusan = jurusanBaru;
-        System.out.println("Jurusan berhasil diubah menjadi: " + jurusan);
+    // Getter (mengambil data)
+    public String getNama() {
+        return nama;
     }
 
-    // Main method untuk menjalankan program
+    public String getNim() {
+        return nim;
+    }
+
+    public String getJurusan() {
+        return jurusan;
+    }
+
+    public int getAngkatan() {
+        return angkatan;
+    }
+
+    // Setter (mengubah data)
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setNim(String nim) {
+        this.nim = nim;
+    }
+
+    public void setJurusan(String jurusan) {
+        this.jurusan = jurusan;
+    }
+
+    public void setAngkatan(int angkatan) {
+        this.angkatan = angkatan;
+    }
+
+    // Method tambahan
+    public void tampilkanInfo() {
+        System.out.println("Nama     : " + nama);
+        System.out.println("NIM      : " + nim);
+        System.out.println("Jurusan  : " + jurusan);
+        System.out.println("Angkatan : " + angkatan);
+    }
+}
+
+// Class Main untuk menjalankan program
+class Main {
     public static void main(String[] args) {
-        // Membuat object mahasiswa1
-        Mahasiswa mahasiswa1 = new Mahasiswa();
-        mahasiswa1.nama = "Budi";
-        mahasiswa1.nim = 12345;
-        mahasiswa1.jurusan = "Teknik Informatika";
+        // Membuat objek mahasiswa
+        Mahasiswa mhs1 = new Mahasiswa("Alfath", "2403026", "Teknik Informatika", 2024);
 
-        mahasiswa1.tampilkanData();
-        mahasiswa1.ubahJurusan("Sistem Informasi");
+        // Menampilkan informasi mahasiswa
+        mhs1.tampilkanInfo();
 
-        // Membuat object mahasiswa2
-        Mahasiswa mahasiswa2 = new Mahasiswa();
-        mahasiswa2.nama = "Ani";
-        mahasiswa2.nim = 67890;
-        mahasiswa2.jurusan = "Rekayasa Perangkat Lunak";
-
-        mahasiswa2.tampilkanData();
+        System.out.println("\nUpdate nama mahasiswa");
+        mhs1.setNama("Shafira");
+        mhs1.tampilkanInfo();
     }
-    
-
-=======
-    
-    String Nama;
-    String Nim;
-    String Jurusan;
-    String email;
->>>>>>> 2078349168e26f741c7e36b4bdad71d9eeb7c69e
-    
 }
