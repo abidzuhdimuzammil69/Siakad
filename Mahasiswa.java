@@ -1,4 +1,5 @@
 public class Mahasiswa {
+<<<<<<< HEAD
 
     
      // Atribut
@@ -40,5 +41,12 @@ public class Mahasiswa {
     }
     
 
+=======
+    
+    String Nama;
+    String Nim;
+    String Jurusan;
+    String email;
+>>>>>>> 2078349168e26f741c7e36b4bdad71d9eeb7c69e
     
 }
